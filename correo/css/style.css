@@ -562,3 +562,60 @@ a:focus {
 
 
 /* end footer section*/
+
+/* cuenta css*/
+.DatoBox {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.formDato {
+  width: 900px;
+  background: #e4e8ec;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: rgb(0, 0, 0);
+  box-shadow: 7px 13px 37px #000;
+}
+.formDato h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.contls {
+  width: 100%;
+  background: #ebeef0;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #48b094;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}
+.formDato p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.formDato a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.formDato a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+.formDato .botons {
+  width: 100%;
+  background: #5ebda4;
+  border: none;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  margin: 16px 0;
+  font-size: 16px;
+}
+/*Fin cuenta css*/

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -12,10 +11,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/Icono.ICO" />
-  <title>(Pendiente sustituir por cuenta de usuario)</title>
-
-
-
+  <title>Cuenta</title>
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
   <!-- progress barstle -->
@@ -28,15 +24,9 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
-
-
-
-
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
-
-
+  <script src="login.js"></script>
 </head>
-
 <body class="sub_page">
   <div class="top_container ">
     <!-- header section strats -->
@@ -45,14 +35,14 @@
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
             <span>
-              (pendiente indexar nickname usuario)
+              Cambio de Datos
+              <div id="u"></div>
             </span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul class="navbar-nav  ">
@@ -66,7 +56,6 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="cuenta.html"> Cuenta </a>
                 </li>
-
               </ul>
             </div>
         </nav>
@@ -74,26 +63,23 @@
     </header>
   </div>
   <!-- end header section -->
-
-  <div class="common_style">
-
+  <div class="DatoBox">
     <!-- about section -->
-    <section class="about_section">
-      <div class="container">
-          <div class="col-md-6">
-            <div class="about_detail-box">
-              <h3>
-                (pendiente agregar formulario cambio datos de usuario)
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
+    <h3>
+      <section class="formDato" >
+        <h4>Registro de Datos</h4>
+          <input class="contls" type="text" name="nombres" id="nombres" placeholder="Ingresa tu Nombre(s)">
+          <input class="contls" type="text" name="apellidos" id="apellidos" placeholder="Ingresa tus Apellidos">
+          <input class="contls" type="email" name="correo" id="correo" placeholder="Ingresa tu Correo Electronico">
+          <input class="contls" type="password" name="correo" id="correo" placeholder="Ingresa tu Contraseña">
+          <input class="contls" type="password" name="correo" id="correo" placeholder="Confirma tu Contraseña">
+          <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+          <input class="botons" type="submit" value="Cambiar">        
+        </section>   
+        <br><br><br><br><br>  
+    </h3>                         
+  </div>     
     <!-- end about section -->
-
   </div>
   <section class="info_section layout_padding-top">
     <div class="info_logo-box">
@@ -103,12 +89,10 @@
     </div> 
     <div class="container">
       <div class="social_container">
-
         <div class="social-box">
           <a href="">
             <img src="images/fb.png" alt="">
           </a>
-
           <a href="">
             <img src="images/twitter.png" alt="">
           </a>
@@ -122,11 +106,7 @@
       </div>
     </div>
   </section>
-
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
-
-
 </body>
-
 </html>
