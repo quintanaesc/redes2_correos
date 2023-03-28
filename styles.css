@@ -8,6 +8,8 @@ html, body {
 body {
   place-items: center;
   display: grid;
+  background-image: url(fondo.avif);
+  background-size: cover;
 }
 
 .div1 {
