@@ -6,7 +6,7 @@ CREATE TABLE empleado (
   id_empleado INT AUTO_INCREMENT PRIMARY KEY,
   nickname CHAR(20),
   cuenta CHAR(20),
-  password CHAR(20)
+  pass CHAR(20)
 );
 
 CREATE TABLE correo (
@@ -23,7 +23,7 @@ CREATE TABLE correo (
 USE email_service;
 
 -- Insertar empleados aleatorios
-INSERT INTO empleado (nickname, cuenta, password)
+INSERT INTO empleado (nickname, cuenta, pass)
 VALUES 
     ('jdoe', 'jdoe@fino.com', '123456'),
     ('jsmith', 'jsmith@fino.com', 'password'),
