@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!-- Basic -->
   <meta charset="utf-8" />
@@ -27,6 +28,7 @@
   <link rel="stylesheet" href="css/css-circular-prog-bar.css">
   <script src="login.js"></script>
 </head>
+
 <body class="sub_page">
   <div class="top_container ">
     <!-- header section strats -->
@@ -66,27 +68,27 @@
   <div class="DatoBox">
     <!-- about section -->
     <h3>
-      <section class="formDato" >
-        <h4>Registro de Datos</h4>
-          <input class="contls" type="text" name="nombres" id="nombres" placeholder="Ingresa tu Nombre(s)">
-          <input class="contls" type="text" name="apellidos" id="apellidos" placeholder="Ingresa tus Apellidos">
-          <input class="contls" type="email" name="correo" id="correo" placeholder="Ingresa tu Correo Electronico">
-          <input class="contls" type="password" name="correo" id="correo" placeholder="Ingresa tu Contraseña">
-          <input class="contls" type="password" name="correo" id="correo" placeholder="Confirma tu Contraseña">
-          <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
-          <input class="botons" type="submit" value="Cambiar">        
-        </section>   
-        <br><br><br><br><br>  
-    </h3>                         
-  </div>     
-    <!-- end about section -->
+      <section class="formDato">
+        <h4>Cambiar datos de usuario</h4>
+        <form  method="POST">
+          <input class="contls" type="text" name="username" id="username" placeholder="Ingresa tu nombre de usuario">
+          <input class="contls" type="email" name="account" id="account" placeholder="Ingresa tu Correo Electronico: ejempl@fino.com">
+          <input class="contls" type="password" name="password" id="password" placeholder="Ingresa tu Contraseña">
+          <input class="contls" type="password" name="pass_confirm" id="pass_confirm" placeholder="Confirma tu Contraseña">
+          <input class="botons" type="submit" value="Cambiar">
+        </form>
+      </section>
+      <br><br><br><br><br>
+    </h3>
+  </div>
+  <!-- end about section -->
   </div>
   <section class="info_section layout_padding-top">
     <div class="info_logo-box">
       <h2>
         FINO
       </h2>
-    </div> 
+    </div>
     <div class="container">
       <div class="social_container">
         <div class="social-box">
@@ -109,4 +111,5 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
+
 </html>
