@@ -10,10 +10,15 @@ body {
   display: grid;
 }
 
-body div {
+.div1 {
   padding: 50px;
   border-radius: 3px;
-  background-color: #EEE;
+  background-color: cornflowerblue;
+}
+
+.div2 {
+  border-radius: 3px;
+  background-color: cornflowerblue;
 }
 
 form {

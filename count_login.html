@@ -1,20 +1,25 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="count_estilos.css">
-        <script src="count_login.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="count_login.html"></script>
     </head>
     <body>
-        <div>
-          <h1>Login</h1>
+        <div class="div1">
+          <h1>Registrarse</h1>
           <form method="POST">
               <label for="username">Usuario</label>
               <input name="username" type="text" />
-              <label for="username">Contraseña</label>
+              <label for="account-number">Correo</label>
+              <div class="div2">
+                <input name="account-number" type="text" />
+                <label>@fino.com</label>
+              </div>
+              <label for="username">Contrase&ntilde;a</label>
               <input name="password" type="password" />
-              <label for="account-number">Número de cuenta</label>
-              <input name="account-number" type="text" />
-              <input type="submit" value="Submit" />
+              <label for="username">Confirme Contrase&ntilde;a</label>
+              <input name="pass_confirm" type="password" />
+              <input type="submit" value="Registrarse" />
           </form>
         </div>
     </body>
