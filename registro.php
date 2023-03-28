@@ -14,28 +14,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<script>alert("Conexión fallida");</script>';
         die();
     }
+    // Verificar que las contraseñas coinciden
+    if ($_POST['password'] !== $_POST['pass_confirm']) {
+        echo '<script>alert("Las contraseñas no coinciden");</script>';
+        die();
+    }
     // Preparar la consulta SQL
-    $query = 'SELECT id_empleado FROM empleado WHERE nickname = :username AND pass = :password';
-    $statement = $pdo->prepare($query);
+    $insert = 'INSERT INTO empleado (nickname, cuenta, pass) VALUES (:username, :account, :password)';
+    $statement = $pdo->prepare($insert);
     // Asignar los valores a los parámetros
     $username = $_POST['username'];
     $password = $_POST['password'];
+    $account = $_POST['account'] . '@fino.com';
     $statement->bindParam(':username', $username);
     $statement->bindParam(':password', $password);
-    // Ejecutar la consulta
+    $statement->bindParam(':account', $account);
+    // Ejecutar la insert
     $statement->execute();
-    // Verificar si se encontró algún registro
-    $result = $statement->fetch();
-    if (!$result) {
-        echo '<script>alert("Usuario o contraseña incorrectos");</script>';
-    } else {
-        // Crear la cookie con el ID del empleado
-        $id_empleado = $result['id_empleado'];
-        setcookie('id_empleado', $id_empleado, time() + 3600, '/');
-        // Redirigir al usuario a la página index.html en la subcarpeta correo
-        header('Location: correo/index.html');
-        exit;
-    }
+    // Redirigir al usuario a la página index.html en la subcarpeta correo
+    header('Location: login.html');
+    
 }
 
 ?> 
