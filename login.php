@@ -1,4 +1,17 @@
 <?php
+
+$servidor = 'localhost';
+$usuario = 'root';
+$pass = '';
+$bd = 'email_service';
+
+$con = mysqli_connect($servidor, $usuario, $pass, $bd);
+
+if($con -> connect_error){
+    die("error al conectar con la base de datos");
+} else {
+    echo "Conexion exitosa";
+}
 // Verificar si se ha enviado el formulario
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Establecer la conexión con la base de datos
@@ -24,11 +37,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo '<script>alert("Usuario o contraseña incorrectos");</script>';
     } else {
         // Crear la cookie con el ID del empleado
-       /*  $id_empleado = $result['id_empleado'];
-        setcookie('id_empleado', $id_empleado, time() + 3600, '/'); */
+            $id_empleado = $result['id_empleado'];
+        setcookie('id_empleado', $id_empleado, time() + 3600, '/');
         // Redirigir al usuario a la página index.html en la subcarpeta correo
         header('Location: correo/index.html');
         exit;
     }
-}
+} 
 ?> 
