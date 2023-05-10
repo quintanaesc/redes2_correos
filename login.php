@@ -3,7 +3,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Establecer la conexión con la base de datos
     $host = 'localhost';
-    $db = 'email_service';
+    $db = 'email_fino';
     $user = 'root';
     $password = '';
     try {
